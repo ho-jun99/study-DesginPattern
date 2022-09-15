@@ -11,9 +11,13 @@ public class Test {
 
         System.out.println("con1 : " + con1);
         System.out.println("con2 : " + con1);
-        System.out.println("con1 == con2 : " +  con1 == con2.toString());
+        System.out.println("con1 == con2 : " +  (con1 == con2));
 
+        con1.connectionList.add("1");
+        con1.connectionList.add("2");
+        con1.connectionList.add("3");
 
+        con2.getArray();
 
     }
 }

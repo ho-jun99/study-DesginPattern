@@ -1,6 +1,8 @@
 package singleton;
 
 
+import java.util.ArrayList;
+
 /*
     싱글톤 패턴 요약
 
@@ -15,6 +17,14 @@ package singleton;
 public class Connectionpool {
     private static Connectionpool connectionpool = new Connectionpool();
     private Connectionpool(){}
+
+    public ArrayList<String> connectionList = new ArrayList<String>();
+
+    public void getArray() {
+        for ( int i=0; i<connectionList.size(); i++) {
+            System.out.println(connectionList.get(i));
+        }
+    }
 
     public static Connectionpool getInstance() {
         if ( connectionpool == null) {
