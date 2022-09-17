@@ -1,5 +1,4 @@
 package abstractFactory.domain.product.dao;
-
 import abstractFactory.domain.product.Product;
 
 public interface ProductDao {
